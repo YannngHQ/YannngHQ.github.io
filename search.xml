@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[title]]></title>
-    <url>%2F2019%2F08%2F11%2Ftitle%2F</url>
+    <title><![CDATA[Linux常用命令]]></title>
+    <url>%2F2019%2F08%2F11%2FLinux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
