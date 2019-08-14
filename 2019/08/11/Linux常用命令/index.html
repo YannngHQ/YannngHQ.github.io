@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="成长之路">
+<meta name="description" content="统计目下文件行数  find ./* -name &amp;quot;*.txt&amp;quot; | xargs -i cat {} | wc -l  依照进程名 kill(Storm三连)  kill -9 $(ps -ef | grep &amp;quot;nimbus&amp;quot; | grep -v grep | awk &amp;apos;{print $2}&amp;apos;) kill -9 $(ps -ef | g">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux常用命令">
 <meta property="og:url" content="http://yoursite.com/2019/08/11/Linux常用命令/index.html">
 <meta property="og:site_name" content="Mr.Yang">
-<meta property="og:description" content="成长之路">
+<meta property="og:description" content="统计目下文件行数  find ./* -name &amp;quot;*.txt&amp;quot; | xargs -i cat {} | wc -l  依照进程名 kill(Storm三连)  kill -9 $(ps -ef | grep &amp;quot;nimbus&amp;quot; | grep -v grep | awk &amp;apos;{print $2}&amp;apos;) kill -9 $(ps -ef | g">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-11T09:49:55.922Z">
+<meta property="og:updated_time" content="2019-08-14T11:13:15.873Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令">
-<meta name="twitter:description" content="成长之路">
+<meta name="twitter:description" content="统计目下文件行数  find ./* -name &amp;quot;*.txt&amp;quot; | xargs -i cat {} | wc -l  依照进程名 kill(Storm三连)  kill -9 $(ps -ef | grep &amp;quot;nimbus&amp;quot; | grep -v grep | awk &amp;apos;{print $2}&amp;apos;) kill -9 $(ps -ef | g">
 
 
 
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  216
                 </span>
               
 
@@ -435,7 +435,41 @@
       
 
       
-        
+        <blockquote>
+<p>统计目下文件行数</p>
+</blockquote>
+<pre><code>find ./* -name &quot;*.txt&quot; | xargs -i cat {} | wc -l </code></pre><blockquote>
+<p>依照进程名 kill(Storm三连)</p>
+</blockquote>
+<pre><code>kill -9 $(ps -ef | grep &quot;nimbus&quot; | grep -v grep | awk &apos;{print $2}&apos;)
+kill -9 $(ps -ef | grep &quot;core&quot; | grep -v grep | awk &apos;{print $2}&apos;)
+kill -9 $(ps -ef | grep &quot;supervisor&quot; | grep -v grep | awk &apos;{print $2}&apos;)</code></pre><blockquote>
+<p>依照进程名查看</p>
+</blockquote>
+<pre><code>ps -ef | grep 进程名</code></pre><blockquote>
+<p>查询某个端口</p>
+</blockquote>
+<pre><code>netstat -nap | grep 进程pid</code></pre><blockquote>
+<p>发送指定行数据</p>
+</blockquote>
+<pre><code>sed -n &apos;1,500000p&apos; /ip_info_produce/a.txt  &gt;&gt; /ip_info_produce/run/b.txt</code></pre><blockquote>
+<p>防火墙添加端口号(centos7)</p>
+</blockquote>
+<pre><code>firewall-cmd --zone=public --add-port=6711/tcp --permanent
+systemctl restart firewalld</code></pre><blockquote>
+<p>建软连</p>
+</blockquote>
+<pre><code># 目标文件夹  软连接
+ln -s /home/soft/apache-storm-1.0.2 /usr/local/storm</code></pre><blockquote>
+<p>转换单个字符</p>
+</blockquote>
+<pre><code>tr &apos;\001&apos; &apos;\^&apos; &lt;000000_0&gt; HBase_html_4.txt</code></pre><blockquote>
+<p>查看文件大小</p>
+</blockquote>
+<pre><code>du -h --max-depth=1</code></pre><blockquote>
+<p>查看文件大小</p>
+</blockquote>
+<pre><code>nohup java -jar /home/UpdateRegisterYDUrl.jar &gt;//home/YXL/UpdateRegisterYDUrl.log 2&gt;&amp;1 &amp;</code></pre>
       
     </div>
     
@@ -604,7 +638,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="symbols_count_time.count_total">0k</span>
+    <span title="symbols_count_time.count_total">1k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

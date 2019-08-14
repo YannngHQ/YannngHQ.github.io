@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux常用命令]]></title>
     <url>%2F2019%2F08%2F11%2FLinux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[统计目下文件行数 find ./* -name &quot;*.txt&quot; | xargs -i cat {} | wc -l 依照进程名 kill(Storm三连) kill -9 $(ps -ef | grep &quot;nimbus&quot; | grep -v grep | awk &apos;{print $2}&apos;) kill -9 $(ps -ef | grep &quot;core&quot; | grep -v grep | awk &apos;{print $2}&apos;) kill -9 $(ps -ef | grep &quot;supervisor&quot; | grep -v grep | awk &apos;{print $2}&apos;) 依照进程名查看 ps -ef | grep 进程名 查询某个端口 netstat -nap | grep 进程pid 发送指定行数据 sed -n &apos;1,500000p&apos; /ip_info_produce/a.txt &gt;&gt; /ip_info_produce/run/b.txt 防火墙添加端口号(centos7) firewall-cmd --zone=public --add-port=6711/tcp --permanent systemctl restart firewalld 建软连 # 目标文件夹 软连接 ln -s /home/soft/apache-storm-1.0.2 /usr/local/storm 转换单个字符 tr &apos;\001&apos; &apos;\^&apos; &lt;000000_0&gt; HBase_html_4.txt 查看文件大小 du -h --max-depth=1 查看文件大小 nohup java -jar /home/UpdateRegisterYDUrl.jar &gt;//home/YXL/UpdateRegisterYDUrl.log 2&gt;&amp;1 &amp;]]></content>
       <categories>
         <category>Linux</category>
       </categories>
