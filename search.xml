@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[JVM自带检测工具]]></title>
-    <url>%2F2019%2F08%2F14%2FJVM%E8%87%AA%E5%B8%A6%E6%A3%80%E6%B5%8B%E5%B7%A5%E5%85%B7%2F</url>
+    <url>%2F2019%2F08%2F14%2FJava%E8%87%AA%E5%B8%A6JVM%E7%9B%91%E6%B5%8B%E5%B7%A5%E5%85%B7%2F</url>
     <content type="text"><![CDATA[JVM自带J1System.out.prient(&quot;这是个测试&quot;) J先挖一个坑]]></content>
       <categories>
         <category>JVM</category>
