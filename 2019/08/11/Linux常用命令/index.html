@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Mr.Yang">
 <meta property="og:description" content="统计目下文件行数  find ./* -name &amp;quot;*.txt&amp;quot; | xargs -i cat {} | wc -l  依照进程名 kill(Storm三连)  kill -9 $(ps -ef | grep &amp;quot;nimbus&amp;quot; | grep -v grep | awk &amp;apos;{print $2}&amp;apos;) kill -9 $(ps -ef | g">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-14T11:19:57.765Z">
+<meta property="og:updated_time" content="2019-11-23T03:25:07.101Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令">
 <meta name="twitter:description" content="统计目下文件行数  find ./* -name &amp;quot;*.txt&amp;quot; | xargs -i cat {} | wc -l  依照进程名 kill(Storm三连)  kill -9 $(ps -ef | grep &amp;quot;nimbus&amp;quot; | grep -v grep | awk &amp;apos;{print $2}&amp;apos;) kill -9 $(ps -ef | g">
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  214
+                  268
                 </span>
               
 
@@ -469,7 +469,16 @@ ln -s /home/soft/apache-storm-1.0.2 /usr/local/storm</code></pre><blockquote>
 <pre><code>du -h --max-depth=1</code></pre><blockquote>
 <p>启动jar包</p>
 </blockquote>
-<pre><code>nohup java -jar /home/UpdateRegisterYDUrl.jar &gt;//home/YXL/UpdateRegisterYDUrl.log 2&gt;&amp;1 &amp;</code></pre>
+<pre><code>nohup java -jar /home/UpdateRegisterYDUrl.jar &gt;//home/YXL/UpdateRegisterYDUrl.log 2&gt;&amp;1 &amp;</code></pre><blockquote>
+<p>查看文件依照时间排序</p>
+</blockquote>
+<pre><code>ll -r</code></pre><blockquote>
+<p>查看文件cat</p>
+</blockquote>
+<pre><code>cat xxx.log | grep ERROR
+cat xxx.log | grep -A 3 ERROR 后3行
+cat xxx.log | grep -B 3 ERROR 前3行
+cat xxx.log | grep -C 3 ERROR 前后各3行</code></pre>
       
     </div>
     
