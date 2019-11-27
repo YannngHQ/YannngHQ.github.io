@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="JVM自带J1System.out.prient(&amp;quot;这是个测试&amp;quot;)  J先挖一个坑">
+<meta name="description" content="用户和组  123456789101112131415161718192021222324252627282930用户:/usr/sbin/user*用户组:/usr/group*创建用户:useradd xxx(默认创建用户组,设置为主组;在/home下创建用户的家目录)删除用户:userdel xxx(删除不了家目录)用户信息:  /etc/passwd  /etc/group  使用组操作">
 <meta name="keywords" content="JVM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JVM自带检测工具">
-<meta property="og:url" content="http://yoursite.com/2019/08/14/Java自带JVM监测工具/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/14/Linux常用命令2/index.html">
 <meta property="og:site_name" content="Mr.Yang">
-<meta property="og:description" content="JVM自带J1System.out.prient(&amp;quot;这是个测试&amp;quot;)  J先挖一个坑">
+<meta property="og:description" content="用户和组  123456789101112131415161718192021222324252627282930用户:/usr/sbin/user*用户组:/usr/group*创建用户:useradd xxx(默认创建用户组,设置为主组;在/home下创建用户的家目录)删除用户:userdel xxx(删除不了家目录)用户信息:  /etc/passwd  /etc/group  使用组操作">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-14T14:10:47.937Z">
+<meta property="og:updated_time" content="2019-11-27T15:00:51.514Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JVM自带检测工具">
-<meta name="twitter:description" content="JVM自带J1System.out.prient(&amp;quot;这是个测试&amp;quot;)  J先挖一个坑">
+<meta name="twitter:description" content="用户和组  123456789101112131415161718192021222324252627282930用户:/usr/sbin/user*用户组:/usr/group*创建用户:useradd xxx(默认创建用户组,设置为主组;在/home下创建用户的家目录)删除用户:userdel xxx(删除不了家目录)用户信息:  /etc/passwd  /etc/group  使用组操作">
 
 
 
@@ -135,7 +135,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/14/Java自带JVM监测工具/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/14/Linux常用命令2/">
 
 
 
@@ -310,7 +310,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/14/Java自带JVM监测工具/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/14/Linux常用命令2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="我不是杨小强">
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  18
+                  261
                 </span>
               
 
@@ -435,7 +435,12 @@
       
 
       
-        <h1 id="JVM自带"><a href="#JVM自带" class="headerlink" title="JVM自带"></a>JVM自带</h1><h2 id="J"><a href="#J" class="headerlink" title="J"></a>J</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.prient(&quot;这是个测试&quot;)</span><br></pre></td></tr></table></figure>
+        <blockquote>
+<p>用户和组</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">用户:/usr/sbin/user*</span><br><span class="line">用户组:/usr/group*</span><br><span class="line">创建用户:useradd xxx(默认创建用户组,设置为主组;在/home下创建用户的家目录)</span><br><span class="line">删除用户:userdel xxx(删除不了家目录)</span><br><span class="line">用户信息:  /etc/passwd  /etc/group  使用</span><br><span class="line">组操作: groupadd  </span><br><span class="line">	usermod -a -G group_x user_x</span><br><span class="line">	id group_x</span><br><span class="line">	usermod -a </span><br><span class="line"></span><br><span class="line">设置密码:passwd xxxx  修改当前用户密码</span><br><span class="line">切换用户:su - xx  /  su xx </span><br><span class="line">	 目录不同,且执行环境变量  .bash_profile 不执行</span><br><span class="line">权限设置:user_x ALL=(root) NOPASSWD:ALL    /etc/</span><br><span class="line"></span><br><span class="line">权限:/bin/bash		/etc/passwd 文件 </span><br><span class="line">     /bin/false 	以下不会切成功</span><br><span class="line">     /sbin/nologin 	</span><br><span class="line"></span><br><span class="line">drwxr-xr-x 2 root root 3 Nov 15 10:00 x.log</span><br><span class="line">d 文件夹   - 文件   l 链接</span><br><span class="line">r:读 4  w:写 2 x:执行 1</span><br><span class="line">1:当前用户 2:用户组 3:其他组用户	 </span><br><span class="line">chomd -R 777 文件/文件夹</span><br><span class="line">chown -R 用户:用户组 文件/文件夹</span><br><span class="line"></span><br><span class="line">查看大小:du -sh xx.log/xxx</span><br><span class="line"></span><br><span class="line">cp /etc/skel/.* /home/xxx  因为隐藏文件(环境配置文件)不存在 </span><br><span class="line">chown xxx:xxx .bash*</span><br></pre></td></tr></table></figure>
+
+<h1 id="JVM自带"><a href="#JVM自带" class="headerlink" title="JVM自带"></a>JVM自带</h1><h2 id="J"><a href="#J" class="headerlink" title="J"></a>J</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.prient(&quot;这是个测试&quot;)</span><br></pre></td></tr></table></figure>
 
 <h2 id="J-1"><a href="#J-1" class="headerlink" title="J"></a>J</h2><p>先挖一个坑</p>
 
@@ -657,14 +662,14 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="symbols_count_time.count_total">1k</span>
+    <span title="symbols_count_time.count_total">2k</span>
 -->
 <!--
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="symbols_count_time.time_total">1 symbols_count_time.time_minutes</span>
+    <span title="symbols_count_time.time_total">2 symbols_count_time.time_minutes</span>
 -->
 <!--
 </div>
