@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Mr.Yang">
 <meta property="og:description" content="统计目下文件行数  find ./* -name &amp;quot;*.txt&amp;quot; | xargs -i cat {} | wc -l  依照进程名 kill(Storm三连)  kill -9 $(ps -ef | grep &amp;quot;nimbus&amp;quot; | grep -v grep | awk &amp;apos;{print $2}&amp;apos;) kill -9 $(ps -ef | g">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-27T14:11:35.586Z">
+<meta property="og:updated_time" content="2019-11-28T01:50:30.562Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令">
 <meta name="twitter:description" content="统计目下文件行数  find ./* -name &amp;quot;*.txt&amp;quot; | xargs -i cat {} | wc -l  依照进程名 kill(Storm三连)  kill -9 $(ps -ef | grep &amp;quot;nimbus&amp;quot; | grep -v grep | awk &amp;apos;{print $2}&amp;apos;) kill -9 $(ps -ef | g">
@@ -481,7 +481,7 @@ cat xxx.log | grep -B 3 ERROR 前3行
 cat xxx.log | grep -C 3 ERROR 前后各3行</code></pre><blockquote>
 <p>修改环境变量</p>
 </blockquote>
-<pre><code>    /etc/profile  所有人
+<pre><code>/etc/profile  所有人
 ~/.bash_profile  个人(ssh远程不生效)
 ~/.bashrc    个人(优先)</code></pre><blockquote>
 <p>别名</p>
@@ -489,7 +489,7 @@ cat xxx.log | grep -C 3 ERROR 前后各3行</code></pre><blockquote>
 <pre><code>alias s=&apos;cd /home/xxxx&apos;</code></pre><blockquote>
 <p>历史</p>
 </blockquote>
-<pre><code>    history -c (man history 查看详细命令帮助)
+<pre><code>history -c (man history 查看详细命令帮助)
 跳板机   堡垒机
 !1  执行历史指定的命令</code></pre><blockquote>
 <p>置空</p>
